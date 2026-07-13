@@ -36,3 +36,10 @@ function removeDuplicates(arr) {
 }
 
 // 3. Find Second Largest Number
+// 3. Find Second Largest Number
+function secondLargest(arr) {
+  const unique = [...new Set(arr)].sort((a, b) => b - a);
+  return unique[1];
+}
+
+console.log(secondLargest([10, 5, 8, 20, 15]));
