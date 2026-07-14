@@ -43,3 +43,4 @@ function secondLargest(arr) {
 }
 
 console.log(secondLargest([10, 5, 8, 20, 15]));
+
