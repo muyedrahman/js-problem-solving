@@ -36,7 +36,7 @@ function removeDuplicates(arr) {
 }
 
 // 3. Find Second Largest Number
-// 3. Find Second Largest Number
+ 
 function secondLargest(arr) {
   const unique = [...new Set(arr)].sort((a, b) => b - a);
   return unique[1];
@@ -44,3 +44,12 @@ function secondLargest(arr) {
 
 console.log(secondLargest([10, 5, 8, 20, 15]));
 
+
+// 4. Check Palindrome
+function isPalindrome(str) {
+  const reversed = str.split("").reverse().join("");
+  return str === reversed;
+}
+
+console.log(isPalindrome("madam"));
+ 
