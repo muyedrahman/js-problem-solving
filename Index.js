@@ -60,18 +60,17 @@ function reverseString(str) {
 
 console.log(reverseString("JavaScript"));
  
-// // 6. Sum of Array
-// function sumArray(arr) {
-//   let sum = 0;
+ 
+// 6. Sum of Array
+function sumArray(arr) {
+  let sum = 0;
 
-//   for (const num of arr) {
-//     sum += num;
-//   }
+  for (const num of arr) {
+    sum += num;
+  }
 
-//   return sum;
-// }
+  return sum;
+}
 
-// console.log(sumArray([10, 20, 30, 40]));
-
-// //  comment:  
+console.log(sumArray([10, 20, 30, 40])); // Add Sum of Array solution
 
