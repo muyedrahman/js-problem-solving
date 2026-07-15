@@ -52,4 +52,26 @@ function isPalindrome(str) {
 }
 
 console.log(isPalindrome("madam"));
+
+// 5. Reverse String
+function reverseString(str) {
+  return str.split("").reverse().join("");
+}
+
+console.log(reverseString("JavaScript"));
  
+// // 6. Sum of Array
+// function sumArray(arr) {
+//   let sum = 0;
+
+//   for (const num of arr) {
+//     sum += num;
+//   }
+
+//   return sum;
+// }
+
+// console.log(sumArray([10, 20, 30, 40]));
+
+// //  comment:  
+
