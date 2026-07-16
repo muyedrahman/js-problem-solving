@@ -72,5 +72,18 @@ function sumArray(arr) {
   return sum;
 }
 
-console.log(sumArray([10, 20, 30, 40])); // Add Sum of Array solution
+console.log(sumArray([10, 20, 30, 40]));  
 
+
+
+// 7. Find Maximum Number
+
+function findMax(arr) {
+
+  return Math.max(...arr);
+
+}
+
+
+
+console.log(findMax([5, 12, 8, 25, 10]));
