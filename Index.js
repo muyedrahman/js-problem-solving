@@ -87,3 +87,10 @@ function findMax(arr) {
 
 
 console.log(findMax([5, 12, 8, 25, 10]));
+
+// 8. Find Minimum Number
+function findMin(arr) {
+  return Math.min(...arr);
+}
+
+console.log(findMin([5, 12, 8, 25, 10]));
