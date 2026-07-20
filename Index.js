@@ -109,3 +109,18 @@ function countEven(arr) {
 }
 
 console.log(countEven([1, 2, 3, 4, 5, 6]));
+
+// 10. Check Prime Number
+function isPrime(num) {
+  if (num < 2) return false;
+
+  for (let i = 2; i <= Math.sqrt(num); i++) {
+    if (num % i === 0) {
+      return false;
+    }
+  }
+
+  return true;
+}
+
+console.log(isPrime(17));
