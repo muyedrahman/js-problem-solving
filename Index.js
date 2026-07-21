@@ -124,3 +124,16 @@ function isPrime(num) {
 }
 
 console.log(isPrime(17));
+
+// 11. Find Factorial
+function factorial(num) {
+  let result = 1;
+
+  for (let i = 2; i <= num; i++) {
+    result *= i;
+  }
+
+  return result;
+}
+
+console.log(factorial(5));
