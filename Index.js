@@ -137,3 +137,19 @@ function factorial(num) {
 }
 
 console.log(factorial(5));
+
+// 12. Find Largest Word
+function longestWord(sentence) {
+  const words = sentence.split(" ");
+  let longest = "";
+
+  for (const word of words) {
+    if (word.length > longest.length) {
+      longest = word;
+    }
+  }
+
+  return longest;
+}
+
+console.log(longestWord("I love JavaScript programming"));
