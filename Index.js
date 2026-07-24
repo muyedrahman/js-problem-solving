@@ -153,3 +153,19 @@ function longestWord(sentence) {
 }
 
 console.log(longestWord("I love JavaScript programming"));
+
+// 13. Count Positive Numbers
+
+function countPositive(arr) {
+  let count = 0;
+
+  for (const num of arr) {
+    if (num > 0) {
+      count++;
+    }
+  }
+
+  return count;
+}
+
+console.log(countPositive([-2, 5, 8, -1, 0, 10]));
