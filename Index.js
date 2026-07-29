@@ -169,3 +169,19 @@ function countPositive(arr) {
 }
 
 console.log(countPositive([-2, 5, 8, -1, 0, 10]));
+
+// 14. Count Negative Numbers
+
+function countNegative(arr) {
+  let count = 0;
+
+  for (const num of arr) {
+    if (num < 0) {
+      count++;
+    }
+  }
+
+  return count;
+}
+
+console.log(countNegative([-2, 5, 8, -1, 0, -10]));
