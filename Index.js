@@ -185,3 +185,20 @@ function countNegative(arr) {
 }
 
 console.log(countNegative([-2, 5, 8, -1, 0, -10]));
+
+// 15. Find Average of Array
+
+function findAverage(arr) {
+  let sum = 0;
+
+  for (const num of arr) {
+    sum += num;
+  }
+
+  return sum / arr.length;
+}
+
+console.log(findAverage([10, 20, 30, 40]));
+// git add .
+// git commit -m "Add array average solution"
+// git push origin main
