@@ -199,6 +199,14 @@ function findAverage(arr) {
 }
 
 console.log(findAverage([10, 20, 30, 40]));
-// git add .
-// git commit -m "Add array average solution"
-// git push origin main
+
+
+// 16. Check Palindrome
+
+function isPalindrome(str) {
+  const reversed = str.split("").reverse().join("");
+
+  return str === reversed;
+}
+
+console.log(isPalindrome("madam"));
