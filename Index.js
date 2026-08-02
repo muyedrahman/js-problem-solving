@@ -210,3 +210,17 @@ function isPalindrome(str) {
 }
 
 console.log(isPalindrome("madam"));
+
+// 17. Reverse a String
+
+function reverseString(str) {
+  return str.split("").reverse().join("");
+}
+
+console.log(reverseString("JavaScript"));
+
+/*
+git add .
+git commit -m "Add reverse string solution"
+git push origin main
+*/ 
