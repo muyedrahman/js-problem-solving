@@ -219,8 +219,12 @@ function reverseString(str) {
 
 console.log(reverseString("JavaScript"));
 
-/*
-git add .
-git commit -m "Add reverse string solution"
-git push origin main
-*/ 
+
+// 18. Count Words in a Sentence
+
+function countWords(sentence) {
+  return sentence.trim().split(" ").length;
+}
+
+console.log(countWords("I love JavaScript"));
+
