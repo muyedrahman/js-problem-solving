@@ -228,3 +228,24 @@ function countWords(sentence) {
 
 console.log(countWords("I love JavaScript"));
 
+// 19. Find the Longest Word
+
+function findLongestWord(sentence) {
+  const words = sentence.split(" ");
+  let longestWord = "";
+
+  for (const word of words) {
+    if (word.length > longestWord.length) {
+      longestWord = word;
+    }
+  }
+
+  return longestWord;
+}
+
+console.log(findLongestWord("I love JavaScript programming"));
+
+/**git add .
+git commit -m "Add longest word finder solution"
+git push origin main  
+*/
