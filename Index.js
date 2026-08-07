@@ -244,8 +244,20 @@ function findLongestWord(sentence) {
 }
 
 console.log(findLongestWord("I love JavaScript programming"));
+   
 
-/**git add .
-git commit -m "Add longest word finder solution"
-git push origin main  
-*/
+// 20. Count Character Frequency
+
+function countCharacter(str, char) {
+  let count = 0;
+
+  for (const currentChar of str) {
+    if (currentChar === char) {
+      count++;
+    }
+  }
+
+  return count;
+}
+
+console.log(countCharacter("javascript", "a"));
