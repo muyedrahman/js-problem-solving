@@ -261,3 +261,19 @@ function countCharacter(str, char) {
 }
 
 console.log(countCharacter("javascript", "a"));
+
+// 20. Count Character Frequency
+
+function countCharacter(str, char) {
+  let count = 0;
+
+  for (const currentChar of str) {
+    if (currentChar === char) {
+      count++;
+    }
+  }
+
+  return count;
+}
+
+console.log(countCharacter("javascript", "a"));
