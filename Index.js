@@ -277,3 +277,5 @@ function countCharacter(str, char) {
 }
 
 console.log(countCharacter("javascript", "a"));
+
+
