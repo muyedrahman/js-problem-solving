@@ -36,14 +36,13 @@ function removeDuplicates(arr) {
 }
 
 // 3. Find Second Largest Number
- 
+
 function secondLargest(arr) {
   const unique = [...new Set(arr)].sort((a, b) => b - a);
   return unique[1];
 }
 
 console.log(secondLargest([10, 5, 8, 20, 15]));
-
 
 // 4. Check Palindrome
 function isPalindrome(str) {
@@ -59,8 +58,7 @@ function reverseString(str) {
 }
 
 console.log(reverseString("JavaScript"));
- 
- 
+
 // 6. Sum of Array
 function sumArray(arr) {
   let sum = 0;
@@ -72,19 +70,13 @@ function sumArray(arr) {
   return sum;
 }
 
-console.log(sumArray([10, 20, 30, 40]));  
-
-
+console.log(sumArray([10, 20, 30, 40]));
 
 // 7. Find Maximum Number
 
 function findMax(arr) {
-
   return Math.max(...arr);
-
 }
-
-
 
 console.log(findMax([5, 12, 8, 25, 10]));
 
@@ -200,7 +192,6 @@ function findAverage(arr) {
 
 console.log(findAverage([10, 20, 30, 40]));
 
-
 // 16. Check Palindrome
 
 function isPalindrome(str) {
@@ -218,7 +209,6 @@ function reverseString(str) {
 }
 
 console.log(reverseString("JavaScript"));
-
 
 // 18. Count Words in a Sentence
 
@@ -244,7 +234,6 @@ function findLongestWord(sentence) {
 }
 
 console.log(findLongestWord("I love JavaScript programming"));
-   
 
 // 20. Count Character Frequency
 
@@ -294,3 +283,13 @@ function findMissingNumber(arr) {
 }
 
 console.log(findMissingNumber([1, 2, 3, 5]));
+
+const x = 10;
+
+if (x > 20) {
+  console.log("A");
+} else if (x > 5) {
+  console.log("B");
+} else {
+  console.log("C");
+}
