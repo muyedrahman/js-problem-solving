@@ -293,3 +293,9 @@ if (x > 20) {
 } else {
   console.log("C");
 }
+
+function reverseString(str) {
+  return str.split('').reverse().join('');
+}
+
+console.log(reverseString("javascript")); // আউটপুট: tpircsavaj
