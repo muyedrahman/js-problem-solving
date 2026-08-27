@@ -309,4 +309,12 @@ function factorial(num) {
   return result;
 }
 
-console.log(factorial(5)); // আউটপুট: 120
+console.log(factorial(5)); 
+
+// 30. Convert String to Uppercase
+
+function toUpper(str) {
+  return str.toUpperCase();
+}
+
+console.log(toUpper("javascript"));
