@@ -318,3 +318,11 @@ function toUpper(str) {
 }
 
 console.log(toUpper("javascript"));
+
+// 31. Convert String to Lowercase
+
+function toLower(str) {
+  return str.toLowerCase();
+}
+
+console.log(toLower("JAVASCRIPT"));
