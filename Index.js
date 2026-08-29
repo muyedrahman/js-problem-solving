@@ -326,3 +326,17 @@ function toLower(str) {
 }
 
 console.log(toLower("JAVASCRIPT"));
+
+// 32. Positive, Negative or Zero
+
+function checkNumber(num) {
+  if (num > 0) return "Positive";
+  if (num < 0) return "Negative";
+  return "Zero";
+}
+
+console.log(checkNumber(-15));
+
+// git add .
+// git commit -m "Add positive negative zero checker solution"
+// git push origin main
