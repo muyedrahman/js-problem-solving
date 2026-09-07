@@ -379,3 +379,28 @@ function secondSmallest(arr) {
 
 console.log(secondSmallest([10, 5, 8, 2, 15, 2]));
 
+// 36. Count Duplicate Numbers
+
+function countDuplicates(arr) {
+  const frequency = {};
+
+  for (const num of arr) {
+    frequency[num] = (frequency[num] || 0) + 1;
+  }
+
+  let count = 0;
+
+  for (const key in frequency) {
+    if (frequency[key] > 1) {
+      count++;
+    }
+  }
+
+  return count;
+}
+
+console.log(countDuplicates([1, 2, 2, 3, 4, 4, 5, 5]));
+
+// git add .
+// git commit -m "Add duplicate numbers counter solution"
+// git push origin main
