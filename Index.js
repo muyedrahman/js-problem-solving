@@ -401,6 +401,19 @@ function countDuplicates(arr) {
 
 console.log(countDuplicates([1, 2, 2, 3, 4, 4, 5, 5]));
 
-// git add .
-// git commit -m "Add duplicate numbers counter solution"
-// git push origin main
+
+// 37. Find Unique Characters
+
+function findUniqueCharacters(str) {
+  const result = [];
+
+  for (const char of str) {
+    if (!result.includes(char)) {
+      result.push(char);
+    }
+  }
+
+  return result.join("");
+}
+
+console.log(findUniqueCharacters("programming"));
