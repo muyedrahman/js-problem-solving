@@ -434,3 +434,24 @@ function countOccurrences(arr, target) {
 
 console.log(countOccurrences([1, 2, 2, 3, 2, 4], 2));
 
+// 44. Find Duplicate Numbers
+
+function findDuplicateNumbers(arr) {
+  const duplicates = [];
+
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = i + 1; j < arr.length; j++) {
+      if (arr[i] === arr[j] && !duplicates.includes(arr[i])) {
+        duplicates.push(arr[i]);
+      }
+    }
+  }
+
+  return duplicates;
+}
+
+console.log(findDuplicateNumbers([1, 2, 3, 2, 4, 3, 5]));
+
+git add .
+git commit -m "Add find duplicate numbers solution"
+git push origin main
