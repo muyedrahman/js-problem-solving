@@ -452,6 +452,3 @@ function findDuplicateNumbers(arr) {
 
 console.log(findDuplicateNumbers([1, 2, 3, 2, 4, 3, 5]));
 
-git add .
-git commit -m "Add find duplicate numbers solution"
-git push origin main
