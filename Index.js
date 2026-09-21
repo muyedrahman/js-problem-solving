@@ -452,3 +452,21 @@ function findDuplicateNumbers(arr) {
 
 console.log(findDuplicateNumbers([1, 2, 3, 2, 4, 3, 5]));
 
+// 45. Find Common Elements
+
+function findCommonElements(arr1, arr2) {
+  const common = [];
+
+  for (const num of arr1) {
+    if (arr2.includes(num) && !common.includes(num)) {
+      common.push(num);
+    }
+  }
+
+  return common;
+}
+
+console.log(
+  findCommonElements([1, 2, 3, 4], [3, 4, 5, 6])
+);
+
