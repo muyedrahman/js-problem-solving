@@ -485,3 +485,19 @@ function sumEvenNumbers(arr) {
 }
 
 console.log(sumEvenNumbers([1, 2, 3, 4, 5, 6]));
+
+// 47. Find Sum of Odd Numbers
+
+function sumOddNumbers(arr) {
+  let sum = 0;
+
+  for (const num of arr) {
+    if (num % 2 !== 0) {
+      sum += num;
+    }
+  }
+
+  return sum;
+}
+
+console.log(sumOddNumbers([1, 2, 3, 4, 5, 6]));
