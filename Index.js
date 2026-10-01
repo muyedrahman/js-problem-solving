@@ -501,3 +501,4 @@ function sumOddNumbers(arr) {
 }
 
 console.log(sumOddNumbers([1, 2, 3, 4, 5, 6]));
+
