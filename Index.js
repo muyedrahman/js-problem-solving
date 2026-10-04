@@ -502,3 +502,25 @@ function sumOddNumbers(arr) {
 
 console.log(sumOddNumbers([1, 2, 3, 4, 5, 6]));
 
+// 48. First Non-Repeating Character
+
+function firstNonRepeatingChar(str) {
+  for (const char of str) {
+    let count = 0;
+
+    for (const item of str) {
+      if (char === item) {
+        count++;
+      }
+    }
+
+    if (count === 1) {
+      return char;
+    }
+  }
+
+  return null;
+}
+
+console.log(firstNonRepeatingChar("aabbcdd"));
+
