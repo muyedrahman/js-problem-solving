@@ -524,3 +524,22 @@ function firstNonRepeatingChar(str) {
 
 console.log(firstNonRepeatingChar("aabbcdd"));
 
+// 49. Find Missing Number
+
+function findMissingNumber(arr, n) {
+  let expectedSum = 0;
+  let actualSum = 0;
+
+  for (let i = 1; i <= n; i++) {
+    expectedSum += i;
+  }
+
+  for (const num of arr) {
+    actualSum += num;
+  }
+
+  return expectedSum - actualSum;
+}
+
+console.log(findMissingNumber([1, 2, 3, 5], 5));
+
