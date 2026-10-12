@@ -543,3 +543,25 @@ function findMissingNumber(arr, n) {
 
 console.log(findMissingNumber([1, 2, 3, 5], 5));
 
+// 50. Move Zeros to the End
+
+function moveZerosToEnd(arr) {
+  const result = [];
+  let zeroCount = 0;
+
+  for (const num of arr) {
+    if (num === 0) {
+      zeroCount++;
+    } else {
+      result.push(num);
+    }
+  }
+
+  for (let i = 0; i < zeroCount; i++) {
+    result.push(0);
+  }
+
+  return result;
+}
+
+console.log(moveZerosToEnd([0, 1, 0, 3, 12]));
