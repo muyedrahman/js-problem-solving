@@ -565,3 +565,24 @@ function moveZerosToEnd(arr) {
 }
 
 console.log(moveZerosToEnd([0, 1, 0, 3, 12]));
+
+// 51. Largest Difference
+
+function findLargestDifference(arr) {
+  let largest = arr[0];
+  let smallest = arr[0];
+
+  for (const num of arr) {
+    if (num > largest) {
+      largest = num;
+    }
+
+    if (num < smallest) {
+      smallest = num;
+    }
+  }
+
+  return largest - smallest;
+}
+
+console.log(findLargestDifference([10, 3, 25, 7, 15]));
