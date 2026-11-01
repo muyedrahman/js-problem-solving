@@ -601,3 +601,23 @@ function isSorted(arr) {
 
 console.log(isSorted([1, 2, 3, 4, 5]));
 console.log(isSorted([1, 3, 2, 4, 5]));
+
+// 53. Second Largest Unique Number
+
+function findSecondLargest(arr) {
+  let largest = -Infinity;
+  let secondLargest = -Infinity;
+
+  for (const num of arr) {
+    if (num > largest) {
+      secondLargest = largest;
+      largest = num;
+    } else if (num > secondLargest && num !== largest) {
+      secondLargest = num;
+    }
+  }
+
+  return secondLargest === -Infinity ? null : secondLargest;
+}
+
+console.log(findSecondLargest([10, 20, 5, 20, 15]));
