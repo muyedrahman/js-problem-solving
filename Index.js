@@ -621,3 +621,18 @@ function findSecondLargest(arr) {
 }
 
 console.log(findSecondLargest([10, 20, 5, 20, 15]));
+
+// 54. Rotate Array to the Right
+
+function rotateArray(arr, k) {
+  if (arr.length === 0) return [];
+
+  k = k % arr.length;
+
+  return [
+    ...arr.slice(-k),
+    ...arr.slice(0, arr.length - k)
+  ];
+}
+
+console.log(rotateArray([1, 2, 3, 4, 5], 2));
