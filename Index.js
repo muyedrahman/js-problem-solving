@@ -636,3 +636,4 @@ function rotateArray(arr, k) {
 }
 
 console.log(rotateArray([1, 2, 3, 4, 5], 2));
+
