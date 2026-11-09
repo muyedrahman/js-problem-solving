@@ -637,3 +637,22 @@ function rotateArray(arr, k) {
 
 console.log(rotateArray([1, 2, 3, 4, 5], 2));
 
+// 55. Find Two Numbers with Target Sum
+
+function findPair(arr, target) {
+  const seen = new Set();
+
+  for (const num of arr) {
+    const complement = target - num;
+
+    if (seen.has(complement)) {
+      return [complement, num];
+    }
+
+    seen.add(num);
+  }
+
+  return [];
+}
+
+console.log(findPair([2, 7, 11, 15], 9));
