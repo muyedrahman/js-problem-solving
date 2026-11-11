@@ -656,3 +656,28 @@ function findPair(arr, target) {
 }
 
 console.log(findPair([2, 7, 11, 15], 9));
+
+// 56. Longest Consecutive Sequence
+
+function longestConsecutive(arr) {
+  const numbers = new Set(arr);
+  let longest = 0;
+
+  for (const num of numbers) {
+    if (!numbers.has(num - 1)) {
+      let current = num;
+      let count = 1;
+
+      while (numbers.has(current + 1)) {
+        current++;
+        count++;
+      }
+
+      longest = Math.max(longest, count);
+    }
+  }
+
+  return longest;
+}
+
+console.log(longestConsecutive([100, 4, 200, 1, 3, 2]));
